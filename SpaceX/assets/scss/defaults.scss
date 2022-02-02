@@ -30,10 +30,9 @@ h3{
 }
 
 section{
+    margin: 2em;
     display: flex;
-    padding: 1em 5em;
     flex-direction: column;
-    margin: 0 auto;
     border-radius: 1em;
 }
 
@@ -54,4 +53,17 @@ article{
 a:hover{
     opacity: 0.6;
     cursor: pointer;
+}
+
+
+@media (min-width: 576px){
+    section {
+        margin: 2em 0;
+    }
+}
+
+@media (min-width: 992px){
+    section {
+        margin: 1.5em 5em;
+    }
 }

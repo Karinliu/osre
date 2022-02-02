@@ -15,7 +15,7 @@
     @import "~assets/scss/variables";
 
     header{
-        padding: 0.5em 5em;
+        margin: 2em 2em;
 
         nav{
             ul{
@@ -38,6 +38,12 @@
                     }
                 }
             }
+        }
+    }
+
+    @media (min-width: 992px){
+        header {
+            margin: 2em 5em;
         }
     }
 </style>

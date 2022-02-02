@@ -66,6 +66,7 @@
           border-radius: 0.5em;
           margin-left: 1em;
           box-shadow: 0.2em 0.2em 1em 0em $green;
+          color: $black;
         }
 
         a{
