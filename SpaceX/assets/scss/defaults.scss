@@ -1,0 +1,57 @@
+@import "variables";
+
+html,
+body{
+    font-family: "Quicksand",sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at bottom, $navy 0, $black 50%);
+    height: auto;
+}
+
+.d-none{
+    display: none;
+}
+
+.d-block{
+    display: block;
+}
+h2{
+    margin: 0;
+    display: inline-block;
+}
+
+h3{
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+section{
+    display: flex;
+    padding: 1em 5em;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 1em;
+}
+
+article{
+    border: 1px solid $white;
+    color: $white;
+    border: 1px solid $white;
+    padding: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0.2em 0.2em 1em 0em $white;
+
+    img{
+        float: right;
+        margin-left: 2em;
+    }
+}
+
+a:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}

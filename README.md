@@ -1,1 +1,1 @@
-# osre
+# About this project
