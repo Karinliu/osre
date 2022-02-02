@@ -9,7 +9,7 @@
         <section>
             <ToggleButton
                 labelText="View retired rockets" 
-                v-model="inActive"
+                v-model="inActiveRockets"
             />
         </section>
 
@@ -18,16 +18,16 @@
             v-for="rocket in rocketsActive" 
             :key="rocket.id"
             :rocket="rocket" 
-            :active="active"
+            v-bind:active="`${active}`"
             />
         </section>
 
-        <section v-if="inActive" >
+        <section v-if="inActiveRockets" >
             <RocketCard 
             v-for="rocket in rocketsInActive" 
             :key="rocket.id"
             :rocket="rocket"
-            :active="inActive"
+            v-bind:inActive="`${inActive}`"
             />
         </section>
     </div>
@@ -41,7 +41,9 @@ export default{
         return{
             rocketsActive: [],
             rocketsInActive: [],
-            inActive: false,
+            inActiveRockets: false,
+            active: "Active",
+            inActive: "Inactive"
         }
     },
     async fetch() {

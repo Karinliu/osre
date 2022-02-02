@@ -6,8 +6,14 @@
                 <li><NuxtLink to="/launches" > Launches </NuxtLink></li>
                 <li><NuxtLink to="/rockets" > Rockets </NuxtLink></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>	
         </nav>
     </header>
+
 </template>
 
 
@@ -38,6 +44,12 @@
                     }
                 }
             }
+        }
+    }
+
+    @media (min-width: 570px){
+        header {
+            margin: 2em 5em;
         }
     }
 

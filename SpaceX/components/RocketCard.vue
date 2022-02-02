@@ -1,12 +1,12 @@
 <template>
     <article class="rocketCard">
         <h2>{{ rocket.name }}</h2>
-        <span class="active" v-if="!active">
-            Status: Active
+        <span class="active" v-if="active">
+            Status: {{active}}
         </span>
 
-        <span class="inactive" v-if="active">
-            Status: Inactive
+        <span class="inactive" v-if="!active">
+            Status: {{inActive}}
         </span>
         
         <img 
@@ -115,6 +115,9 @@
                 default: () => {},
             },
             active: {
+                type: String,
+            },
+            inActive: {
                 type: String,
             }
         },

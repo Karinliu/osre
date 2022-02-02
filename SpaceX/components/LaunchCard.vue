@@ -3,8 +3,13 @@
       <h2>{{launch.name}} </h2>
 
       <p class="status">
-          <span>Status: </span> 
-          <span>Success</span>
+            <span class="success" v-if="success">
+                Status: {{success}}
+            </span>
+
+            <span class="unsuccess" v-if="unsuccess">
+                Status: {{unsuccess}}
+            </span>
       </p>
 
       <img 
@@ -42,7 +47,10 @@
                 type: Object,
                 default: () => {},
             },
-            active: {
+            success: {
+                type: String,
+            },
+            unsuccess: {
                 type: String,
             }
         },
@@ -61,12 +69,23 @@
         .status{
           display: inline-block;
           margin: 0;
-          background: $green;
-          padding: 0.5em;
-          border-radius: 0.5em;
           margin-left: 1em;
-          box-shadow: 0.2em 0.2em 1em 0em $green;
           color: $black;
+
+          span{
+              padding: 0.5em;
+              border-radius: 0.5em;
+          }
+
+          .success{
+              background: $green;
+              box-shadow: 0.2em 0.2em 1em 0em $green;
+          }
+
+          .unsuccess{
+              background: red;
+              box-shadow: 0.2em 0.2em 1em 0em red;
+          }
         }
 
         a{

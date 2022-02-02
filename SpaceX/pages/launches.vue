@@ -11,6 +11,15 @@
             v-for="launch in launchSuccess.slice().reverse()" 
             :key="launch.id"
             :launch="launch" 
+            v-bind:success="`${success}`"
+            />
+        </section>
+        <section>
+            <LaunchCard 
+            v-for="launch in launchUnSuccess.slice().reverse()" 
+            :key="launch.id"
+            :launch="launch" 
+            v-bind:unsuccess="`${unsuccess}`"
             />
         </section>
 
@@ -25,6 +34,9 @@ export default{
         return{
             launchSuccess: [],
             launchUnSuccess: [],
+            success: "Success",
+            unsuccess: "Unsuccess",
+            
         }
     },
     async fetch() {
