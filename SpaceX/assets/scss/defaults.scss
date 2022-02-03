@@ -8,7 +8,9 @@ body{
 body{
     margin: 0;
     padding: 0;
-    background: radial-gradient(circle at bottom, $navy 0, $black 50%);
+    z-index: 0;
+	background: $black url('~@/assets/images/stars.png')repeat top center;
+
     height: auto;
 }
 

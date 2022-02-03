@@ -66,65 +66,93 @@ export default ({
         }
     }
 
-    @media (min-width: 570px){
-        header {
-            margin: 2em 5em;
-        }
-    }
+    @media (max-width: 570px) {
+         header {
+            position: fixed;
+            width: 100vw;
+            margin: 0;
+            height: 5em;
+            top: 0;
+            background: $black;
+    
+                button{
+                    display: inline-block;
+                    width: 2em;
+                    height: 2em;
+                    background: none;
+                    border: none;
+                    z-index: 100;
+                    cursor: pointer;
+                    margin: 2em;
+                    position: relative;
+                    z-index: 100;
 
-    @media (max-width: 768px) {
-        button{
-            display: block;
-			width: 50px;
-			height: 50px;
-			background: none;
-			border: none;
-			position: absolute;
-			z-index: 100;
-			cursor: pointer;
+                    span{
+                        display: block;
+                        width: 20px;
+                        height: 2px;
+                        margin: auto;
+                        background: $white;
+                        transition: all .4s ease;
 
-            span{
-				display: block;
-				width: 20px;
-				height: 2px;
-				margin: auto;
-				background: $white;
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				transition: all .4s ease;
+                        &.top {
+                            transform: translateY(-8px);
+                        }
 
-                &.top {
-					transform: translateY(-8px);
-				}
-
-				&.bottom {
-					transform: translateY(8px);
-				}
-            }
-            &.active{
-                    .top {
-                        transform: rotate(-45deg);
+                        &.bottom {
+                            transform: translateY(8px);
+                        }
                     }
-                    .mid{
-                        transform: translateX(-20px) rotate(360deg);
-                        opacity: 0;
+                    &.active{
+
+                            .top {
+                                transform: translateY(2px)  rotate(-45deg);
+                                background: $black;
+                            }
+                            .mid{
+                                transform: translateX(-20px) rotate(360deg);
+                                opacity: 0;
+                            }
+                            .bottom {
+                                transform: translateY(-1px) rotate(45deg);
+                                background: $black;
+                            }
+                        }
+                }
+
+
+                nav{
+                    background: $white;
+                    position: fixed;
+                    transition-duration: 0.5s;
+                    left: -100%;
+                    width: 15em;
+                    top: 0;
+                    height: 100vh;
+                    
+
+                    &.active{
+                        transition-duration: 0.5s;
+                        left: 0;
+                        // display: block;
                     }
-                    .bottom {
-                        transform: rotate(45deg);
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        margin: 5em 2em;
+                        padding: 0;
+
+                        li{
+                            height: 3em;
+                            width: 100%;
+                            margin: 0;
+
+                            a{
+                                color: $black;
+                            }
+                        }
                     }
                 }
-        }
-
-
-        nav{
-            display: none;
-
-            &.active{
-                display: block;
-            }
         }
     }
 

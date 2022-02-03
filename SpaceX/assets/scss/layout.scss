@@ -5,6 +5,12 @@
     }
 }
 
+@media (max-width: 576px){
+    .container {
+        margin-top: 3em;
+    }
+}
+
 @media (min-width: 768px){
     .container {
         max-width: 720px;

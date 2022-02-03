@@ -106,4 +106,25 @@
         }
     }
 
+
+    @media (max-width: 576px){
+        .launchCard {
+            img{
+                float: inherit;
+                margin: 1em 0em;
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: 500px){
+        .launchCard {
+            .status{
+                display: block;
+                margin: 2em 0;
+            }
+        }
+    }
+
+
 </style>

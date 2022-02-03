@@ -163,4 +163,37 @@
             }
         }
     }
+
+    @media (max-width: 1200px){
+        .rocketCard{
+            img{
+                height: 12em;
+            }
+        }
+        
+    }
+
+        @media (max-width: 768px){
+        .rocketCard{
+            img{
+                height: 8em;
+                float: none;
+                margin-left: 0;
+                margin-top: 1em;
+                display: block;
+            }
+        }
+        
+    }
+
+    @media (max-width: 576px){
+        .rocketCard{
+            .informationButtons {
+            display: block;
+        }
+        }
+    }
+
+
+
 </style>

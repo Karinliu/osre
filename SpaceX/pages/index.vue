@@ -3,7 +3,7 @@
         <Header/>
         <section>
             <PageTitle
-                titleText="Upcoming launches"
+                titleText="Upcoming"
             />
         </section>
         <section>
