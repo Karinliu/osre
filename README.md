@@ -1,8 +1,12 @@
 # Osre
-[Osre](https://osremarketsuite.nl/) asked to build a small website with a number of requirements:
+[Osre](https://osremarketsuite.nl/) asked me to build a small website with a number of requirements:
 * Use the framework [Vue.js](https://vuejs.org/)
 * Use the SpaceX V4 api and use the [launch](https://api.spacexdata.com/v4/launches) api and the [rocket](https://api.spacexdata.com/v4/rockets) api.
 * Use components
+
+
+## API
+
 
 ## Download my VueJS application
 
