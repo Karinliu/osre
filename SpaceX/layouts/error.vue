@@ -8,7 +8,7 @@
         </section>
         <section>
             <h2>Oops! We lost this page in space</h2>
-            <img src="~@/assets/images/mochitherocketman.png" alt="Mochi in a racket">
+            <img class="error-rocket" src="~@/assets/images/mochitherocketman.png" alt="Mochi in a racket">
         </section>
 
         <section>
@@ -26,7 +26,7 @@
         color: $white;
     }
     
-    img{
+    .error-rocket{
         height: 20em;
         animation: MoveUpDown 1s linear infinite;
         position: absolute;
